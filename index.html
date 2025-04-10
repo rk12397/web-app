@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Block-N-Roll 🚇</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="top-banner"></div>
+
+    <div id="bottom-section">
+      <div id="game"></div>
+
+      <div id="hud">📊 Score: <span id="score">0</span></div>
+
+      <div id="gameOver">
+        💀 Game Over!<br>
+        🏁 Final Score: <span id="finalScore"></span><br>
+        <button onclick="location.reload()">🔄 Restart</button>
+      </div>
+
+      <div id="controls">
+        <button onclick="moveLeft()">⏪ Left</button>
+        <button onclick="moveRight()">⏩ Right</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
